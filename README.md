@@ -118,5 +118,43 @@ A partir de maintenant vous pourrez implémenter une multitude d'options.
 
 ## Partie 2
 
+### Ajoutez au fichier popup html le code suivant:
 
+```html
+<div class="col-sm-12">
+  <ul>
+    <li>
+      <span class="active" id="ajouter">Ajouter</span>
+    </li>
+    <li>
+      <span id="afficher">Afficher</span>
+    </li>
+  </ul>
+</div>
 
+<div id="formHistorique" class="col-md-12">
+  <div class="form-group">
+      <label for="lien">Lien:</label>
+      <input type="text" class="form-control" id="lien">
+  </div>
+  <div class="form-group">
+    <label for="categorie">Catégorie:</label>
+    <select class="form-control" id="categorie">
+      <option value="pro">Pro</option>
+      <option value="perso">Perso</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" class="form-control" id="description">
+  </div>
+  <button id="validerFavoris" class="btn btn-sm btn-primary">Valider !</button>
+</div>
+
+<div id="resultHistorique" class="col-md-12 masquer">
+  <h3>Perso</h3>
+  <div id="pro" class="col-md-12"></div>
+  <h3>Pro</h3>
+  <div id="perso" class="col-md-12"></div>
+</div>
+```
