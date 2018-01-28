@@ -118,7 +118,7 @@ A partir de maintenant vous pourrez implémenter une multitude d'options.
 
 ## Partie 2
 
-### Ajoutez au fichier popup html le code suivant:
+### Ajoutez au fichier 'popup.html' le code suivant:
 
 ```html
 <div class="col-sm-12">
