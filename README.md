@@ -28,7 +28,7 @@ La première étape va être de définir les différentes propriétés en foncti
   * "default_popup": "file_name"
   
 #### 2. "background"
-  * "scripts": : "file_name"
+  * "scripts": "file_name"
 
 ## Importer l'extension
 
@@ -50,3 +50,20 @@ Maintenant:
 ### Oupsss !
 
 Votre extension a déjà oublié votre prénom est vous le demande à nouveau :/
+
+Nous allons donc voir comment stocker des données dans votre extension.
+
+## Stocker des données
+
+Il existe deux méthodes pour sauvegarder les données de l'utilisateur de façon durable :
+
+* Dans une base de données apartenant au créateur de l'extension
+* Sur l'ordinateur de l'utilisateur
+
+La première méthode est utile dans le cas ou l'extension est un jeu par exemple où l'on souhaiterai afficher un top 100.
+
+Dans notre cas, nous allons utiliser la deuxième méthode qui consiste à utiliser une nouveauté du html5 : localStorage. On va donc stocker les données sur l'ordinateur du client.
+C'est déjà mieux pour la protection de ses données, et ça vous fait économiser un hébergement, beaucoup de temps de transmission, et énormément de place.
+
+
+
