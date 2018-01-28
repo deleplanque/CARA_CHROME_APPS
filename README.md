@@ -118,6 +118,8 @@ A partir de maintenant vous pourrez implémenter une multitude d'options.
 
 ## Partie 2
 
+Le but de la partie 2, est de créer une extension qui gère nos favoris. Le but est de pouvoir associer un favoris à une catégorie et de lui ajouter une description.
+
 ### Ajoutez au fichier 'popup.html' le code suivant ...
 
 ```html
@@ -206,9 +208,14 @@ var favoris = document.getElementById('validerFavoris');
 ### Rappels:
 
 ```js
-var jsonString= JSON.stringify(Object);
+var jsonString = JSON.stringify(Object);
 ```
 
 ```js
 var Object = JSON.parse(jsonString);
 ```
+
+## Pour aller plus loin
+
+* Ouvrir une fenêtre lorsque l'on clique sur un favoris.
+* Créer une option dans la page d'otpion.
