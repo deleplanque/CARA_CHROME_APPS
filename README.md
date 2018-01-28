@@ -47,4 +47,6 @@ Maintenant:
 
  * Fermez la popup et ouvrez la de nouveau.
 
+### Oupsss !
 
+Votre extension a déjà oublié votre prénom est vous le demande à nouveau :/
