@@ -118,7 +118,7 @@ A partir de maintenant vous pourrez implémenter une multitude d'options.
 
 ## Partie 2
 
-### Ajoutez au fichier 'popup.html' le code suivant:
+### Ajoutez au fichier 'popup.html' le code suivant ...
 
 ```html
 <div class="col-sm-12">
@@ -157,4 +157,45 @@ A partir de maintenant vous pourrez implémenter une multitude d'options.
   <h3>Pro</h3>
   <div id="perso" class="col-md-12"></div>
 </div>
+```
+
+### ... et ce code au fichier 'popup.js'
+
+```js
+var favoris = document.getElementById('validerFavoris');
+  favoris.addEventListener('click', function() {
+    chrome.tabs.getSelected(null, function() {
+    // TODO (étape 3) - implémentez le code permettant de récuperer le contenue du formulaire et de le stocker sous format JSON
+    // Pour la sauvegarde de l'objet au format JSON, pensez à mettre un prefixe (ex: fav-) dans la clé. cela permettra de faire un      filtre parmis l'ensemble de vos informations stocker dans votre localStorage.
+    
+    
+    });
+  }, false);
+
+
+
+
+  var afficher = document.getElementById('afficher');
+  afficher.addEventListener('click', function() {
+    chrome.tabs.getSelected(null, function() {
+      document.getElementById('formHistorique').classList.add('masquer');
+      document.getElementById('resultHistorique').classList.remove('masquer');
+      document.getElementById('ajouter').classList.remove('active');
+      document.getElementById('afficher').classList.add('active');
+      // TODO (étape 4) - implementez le code permettant d'afficher l'ensemble des favoris par categorie (perso/pro)
+
+
+    });
+  }, false);
+  
+  
+  var ajouter = document.getElementById('ajouter');
+  ajouter.addEventListener('click', function() {
+    chrome.tabs.getSelected(null, function() {
+      document.getElementById('resultHistorique').classList.add('masquer');
+      document.getElementById('formHistorique').classList.remove('masquer');
+      document.getElementById('afficher').classList.remove('active');
+      document.getElementById('ajouter').classList.add('active');
+    });
+  }, false);
 ```
