@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "TP CARA MIAGE",
+  "description": "",
+  "version": "1.0",
+  "browser_action": {
+  },
+  "background": {
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
