@@ -77,5 +77,6 @@ localStorage.length();  //le nombre de clef de localStorage
 if (localStorage['prenom']) //test si un item dont la cle est prenom est present dans le localStorage
 ```
 
-#### Etape 1 - implementer le code javascript afin que votre extension n'oublie plus votre prénom :) (1 ligne suffit)
+#### Etape 1 - implementer le code javascript afin que votre extension n'oublie plus votre prénom !
+#### Etape 2 - implementer le code permettant d'afficher "Content de vous revoir 'VOTRE_PRENOM'" lorsque vous ouvrez à nouveau l'extension mais aussi de ne plus afficher le formulaire vous demandant votre prénom
 
