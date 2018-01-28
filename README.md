@@ -76,7 +76,7 @@ localStorage.clear();  //vider localStorage
 localStorage.length();  //le nombre de clef de localStorage
 if (localStorage['prenom']) //test si un item dont la cle est prenom est present dans le localStorage
 ```
-A Savoir, localstorage permet une capacité de stockage de 5GO.
+A Savoir, localstorage possède une capacité de stockage de 5GO.
 
 Si votre extension sert à stocker une grande quantié de données, alors il vous faudra rajouter dans le manifest.json :
 
