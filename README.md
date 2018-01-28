@@ -199,3 +199,16 @@ var favoris = document.getElementById('validerFavoris');
     });
   }, false);
 ```
+
+* Faire TODO (étape 3)
+* Faire TODO (étape 4)
+
+### Rappels:
+
+```js
+var jsonString= JSON.stringify(Object);
+```
+
+```js
+var Object = JSON.parse(jsonString);
+```
