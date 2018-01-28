@@ -74,6 +74,8 @@ var key = localStorage.key(n);  //récupérer la clef du n item.
 var value = localStorage.getItem(key) // retourne la valeur correspondant à la clé
 localStorage.clear();  //vider localStorage
 localStorage.length();  //le nombre de clef de localStorage
+if (localStorage['prenom']) //test si un item dont la cle est prenom est present dans le localStorage
 ```
 
+#### Etape 1 - implementer le code javascript afin que votre extension n'oublie plus votre prénom :) (1 ligne suffit)
 
