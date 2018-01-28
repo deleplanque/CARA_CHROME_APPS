@@ -217,5 +217,6 @@ var Object = JSON.parse(jsonString);
 
 ## Pour aller plus loin
 
+* Créer une option dans la page d'otpion. (Exemple: changer la couleur de fond)
 * Ouvrir une fenêtre lorsque l'on clique sur un favoris.
-* Créer une option dans la page d'otpion.
+
