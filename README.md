@@ -57,7 +57,7 @@ Nous allons donc voir comment stocker des données dans votre extension.
 
 Il existe deux méthodes pour sauvegarder les données de l'utilisateur de façon durable :
 
-* Dans une base de données apartenant au créateur de l'extension
+* Dans une base de données appartenant au créateur de l'extension
 * Sur l'ordinateur de l'utilisateur
 
 La première méthode est utile dans le cas ou l'extension est un jeu par exemple où l'on souhaiterai afficher un top 100.
@@ -65,5 +65,15 @@ La première méthode est utile dans le cas ou l'extension est un jeu par exempl
 Dans notre cas, nous allons utiliser la deuxième méthode qui consiste à utiliser une nouveauté du html5 : localStorage. On va donc stocker les données sur l'ordinateur du client.
 C'est déjà mieux pour la protection de ses données, et ça vous fait économiser un hébergement, beaucoup de temps de transmission, et énormément de place.
 
+### Comment utiliser le localStorage ?
+
+```js
+localStorage.setItem(key,value);  //donner une nouvelle valeur
+localStorage.removeItem(key);  //supprimer l'item
+var key = localStorage.key(n);  //récupérer la clef du n item.
+var value = localStorage.getItem(key) // retourne la valeur correspondant à la clé
+localStorage.clear();  //vider localStorage
+localStorage.length();  //le nombre de clef de localStorage
+```
 
 
