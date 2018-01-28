@@ -154,9 +154,9 @@ Le but de la partie 2, est de créer une extension qui gère nos favoris. Le but
 </div>
 
 <div id="resultHistorique" class="col-md-12 masquer">
-  <h3>Perso</h3>
-  <div id="pro" class="col-md-12"></div>
   <h3>Pro</h3>
+  <div id="pro" class="col-md-12"></div>
+  <h3>Perso</h3>
   <div id="perso" class="col-md-12"></div>
 </div>
 ```
