@@ -76,7 +76,47 @@ localStorage.clear();  //vider localStorage
 localStorage.length();  //le nombre de clef de localStorage
 if (localStorage['prenom']) //test si un item dont la cle est prenom est present dans le localStorage
 ```
+A Savoir, localstorage permet une capacité de stockage de 5GO.
+
+Si votre extension sert à stocker une grande quantié de données, alors il vous faudra rajouter dans le manifest.json :
+
+```json
+"permissions": ["unlimitedStorage"]
+```
 
 #### Etape 1 - implementer le code javascript afin que votre extension n'oublie plus votre prénom !
-#### Etape 2 - implementer le code permettant d'afficher "Content de vous revoir 'VOTRE_PRENOM'" lorsque vous ouvrez à nouveau l'extension mais aussi de ne plus afficher le formulaire vous demandant votre prénom
+#### Etape 2 - implementer le code permettant d'afficher "Content de vous revoir 'VOTRE_PRENOM'" lorsque vous ouvrez à nouveau l'extension mais aussi de ne plus afficher le formulaire vous demandant votre prénom.
+
+## Les pages d'options
+
+On pourrait monter tout un dispositif pour enregistrer les options, avec un lien dans la popup, qui, par fenêtres de dialogue permettrait d'enregistrer les préférences de l'utilisateur, mais quelques chose de plus simple existe.
+
+### Une page d'option ?
+
+Une page d'option est une page dans laquelle l'utilisateur choisit ses préférences.
+C'est exactement ce qu'il nous faut : une page dédiée à la saisie des préférences dans laquelle on peut utiliser localStorage autant que l’on veut !
+Dans certaines extensions, il y a un lien dans la popup. Sinon, on accède à cette fameuse page d'options en faisant un clic droit puis "options" sur l'icône dans la barre d'extensions.
+On peut également y accéder, dans la page de gestion des extensions par le lien "options", après le lien "désinstaller".
+
+* Essayer de faire un clic droit sur votre extension situé dans la barre de tâche.
+
+On remarque que le lien est désactivé. 
+De base, votre extension ne possède pas de page d’option, lorsque vous publiez votre extension, google le remarque, ainsi il désactive le lien.
+
+Pour l’activer, rien de plus simple. Allez dans le manifest.json puis ajoutez la ligne suivante :
+
+```json
+"options_page":"page_options.html"
+```
+
+* Créez le fichier nécessaire au bon fonctionnement de l'extension.
+* Essayez de nouveau d'accéder à la page d'option
+
+Google à donc détecter la présence d'une page d'option et à donc activé l'option.
+
+A partir de maintenant vous pourrez implémenter une multitude d'options.
+
+## Partie 2
+
+
 
