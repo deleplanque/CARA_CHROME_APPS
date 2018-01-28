@@ -24,8 +24,14 @@ Le manifest.json est implémenté de la façon suivante:
 La première étape va être de définir les différentes propriétés en fonction des fichiers existants:
 
 #### 1. "browser_action"
-  *	"default_icon"
-  * "default_popup"
+  *	"default_icon": "file_name"
+  * "default_popup": "file_name"
   
 #### 2. "background"
-  * "scripts"
+  * "scripts": : "file_name"
+
+## Importer l'extension
+
+De la même façon que pour le premier TP, importez votre extension dans votre Google chrome.
+
+  
